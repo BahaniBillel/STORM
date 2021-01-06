@@ -56,7 +56,7 @@ a {
 
  body{
      width: 100vw;
-     height: 8000px;
+    //  height: 8000px;
      margin: 0 auto ;
      position: relative;
      background-color: #f4f4f4;
@@ -79,7 +79,7 @@ a {
 
    .upper_header{
        width: 100%;
-       height: 30vh;
+    //    height: 30vh;
        position: relative;
     //    background: #b83030 !important;
 
@@ -155,9 +155,9 @@ a {
 
     .hero-img{
         width: 100%;
-        height: 45vh;
+        height: 70vh;
         object-fit: fill;
-        background: url(../img/hero_img.jpg) center/cover;
+        background:linear-gradient(60deg,rgba(2, 3, 90, 0.6),rgba(30, 2, 107, 0.7)),url(../img/businesswoman_lg.jpg) top/cover;
 
 
 
@@ -170,21 +170,33 @@ a {
  PROFILE SECTION
   -------------------------*/
 .profile{
-    width: 100vw;
+    width: 90vw;
     height: 130vh;
     display:flex ;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: space-around;
+    justify-content: space-around;
+    align-items:center;
+    margin: 0 auto;
+    position: relative;
 
     // position: absolute;
     // top: 280px;
     // left: 0;
 
+    .detail{
+        width: 74%;
+        height: 100%;
+        background: #6a7483;
+        position: absolute;
+        left: 0;
+        top: 5%;
+        border-radius: 10px;
 
+
+    }
 
     .resume{
-        width: 20%;
+        width: 25%;
         height: 100%;
         background-color: #141414;
         display: flex;
@@ -192,24 +204,82 @@ a {
         justify-content: flex-start;
         align-items: center;
         padding:  1rem;
+        position: absolute;
+        right: 0;
+        top: -15%;
+        border-radius: 10px;
+        background-color: #141414;
 
-        .box_photo{
+        .wrapper{
             width: 100%;
-            height: 35%;
+            height: 19vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            .box_photo{
+                width: 200px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2rem;
+                background-color: red;
+                clip-path: circle(50% at 50% 50%);
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                top: -10%;
+                z-index: 20;
+
+                .photo{
+                    width: 100%;
+                    height: 100%;
+                    background: url(../img/businesswoman.jpg) center/cover;
+                    object-fit: cover;
+
+
+                }
+
+
+
+
+            }
+            .social{
+                height: 10%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                justify-items: center;
+                flex-wrap: nowrap;
+                flex-grow: 1;
+                flex-shrink: 1;
+                padding: 0 3rem;
+                margin-top: 7rem;
+
+
+
+
+                a{
+                    height: 90%;
+                    img{
+                        width: 30px;
+                    }
+
+                }
+            }
+        }
+        .resume_links{
+            width: 100%;
+            height: 95%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-bottom: 2rem;
-
-            .photo{
-                width: 250px;
-                height: 250px;
-                background: url(../img/adult-blur-boss-business-288477.jpg) center/cover;
-                // border-radius: 50%;
-
-            }
-
+            padding: 0 1.5rem;
+            margin-top: 2rem;
             .name_info{
                 width: 100%;
                 text-align: center;
@@ -230,16 +300,6 @@ a {
 
                 }
             }
-
-
-        }
-        .resume_links{
-            width: 100%;
-            height: 45%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             .item{
                 width: 100%;
                 height: 50px;
@@ -279,35 +339,11 @@ a {
                 }
             }
         }
-        .social{
-            height: 1%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            justify-items: flex-end;
-            flex-wrap: nowrap;
-            flex-grow: 1;
-            flex-shrink: 1;
-            background-color: #141414;
 
-
-            a{
-                height: 90%;
-                img{
-                    width: 30px;
-                }
-
-            }
-        }
 
     }
 
-    .detail{
-        width: 70%;
-        height: 100%;
-        background: #6a7483;
-    }
+
 }
 
 
@@ -321,7 +357,7 @@ HAMBURGER NAVIGATION
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
-   background: #f4f4f4 !important;
+   background: #f4f4f460 !important;
    position: fixed;
    left: 0%;
    top: 0%;
