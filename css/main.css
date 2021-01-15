@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -724,5 +725,28 @@ HAMBURGER NAVIGATION
     .my-first-grid [class^="grid-item"]:hover {
       transform: scale(0.98);
       cursor: pointer; }
+
+/*------------------------
+FEATURE SECTION
+-----------------------------------------------------------*/
+.feature {
+  width: 100vw;
+  height: 100vh;
+  background-color: indianred;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  .feature__content {
+    grid-column: 2/-1;
+    grid-row: 1/1;
+    background-color: indigo; }
+  .feature__image {
+    grid-column: 1/1;
+    grid-row: 1/-1;
+    background: url(../img/person-resting-their-hand-on-table-2058147.jpg) center/cover; }
+  .feature__content {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+    background-color: limegreen; }
 
 /*# sourceMappingURL=main.css.map */

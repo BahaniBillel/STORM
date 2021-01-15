@@ -186,10 +186,12 @@ a {
     .detail{
         width: 74%;
         height: 100%;
-        background: #6a7483;
+        // background: orangered;
+        background: rgb(255,69,0);
+        background: linear-gradient(49deg, rgba(255,69,0,1) 10%, rgba(255,69,0,1) 49%, rgba(255,7,7,1) 84%);
         position: absolute;
         left: 0;
-        top: 5%;
+        top: -10%;
         border-radius: 10px;
 
 
@@ -206,7 +208,7 @@ a {
         padding:  1rem;
         position: absolute;
         right: 0;
-        top: -15%;
+        top: -10%;
         border-radius: 10px;
         background-color: #141414;
 
@@ -286,7 +288,7 @@ a {
                 margin-top: 1rem;
 
                 h3{
-                    font-size: 130%;
+                    font-size: 200%;
                     color: orangered;
                     width: 100%;
                     border-bottom: .2px solid  #6a7483;

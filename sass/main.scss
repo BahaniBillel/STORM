@@ -1011,3 +1011,36 @@ grid-auto-flow: column ;
 
 
 }
+
+
+
+/*------------------------
+FEATURE SECTION
+-----------------------------------------------------------*/
+
+.feature{
+    width: 100vw;
+    height: 100vh;
+    background-color:indianred;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    &__content{
+        grid-column: 2/-1;
+        grid-row: 1/1;
+        background-color: indigo;
+    }
+
+    &__image{
+        grid-column: 1/1;
+        grid-row: 1/-1;
+        background: url(../img/person-resting-their-hand-on-table-2058147.jpg)center/cover;
+    }
+    &__content{
+        grid-row: 2/-1;
+        grid-column: 2/-1;
+        background-color: limegreen;
+    }
+}
+

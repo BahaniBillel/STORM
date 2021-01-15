@@ -1,3 +1,5 @@
+import "../sass/main.scss";
+// import  "../css/main.css";
 
 // SIDE NAVIGATION BAR
 const side_nav = document.querySelector(".side_nav");
@@ -13,3 +15,4 @@ open_menu.addEventListener("click", ()=>{
 
 // ANIMATION
 // gsap.to(".logoBox",{duration:2, x:300})
+

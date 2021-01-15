@@ -1,1 +1,0 @@
-(()=>{const e=document.querySelector(".side_nav");document.querySelector(".open-menu").addEventListener("click",(()=>{e.classList.toggle("reveal_nav")}))})();
