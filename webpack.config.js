@@ -1,5 +1,6 @@
 const path = require("path");
 
+
 module.exports ={
     entry:"./js/app.js",
     output:{
@@ -20,9 +21,11 @@ module.exports ={
                 use:["style-loader","css-loader","sass-loader"],
                 },
                {
-                test: /\.(png|jpg|gif)$/i,
+                test: /\.(png|jpg|gif|svg|mp4)$/i,
                 loader: 'url-loader'
-              }
+              },
+
       ],
+
     },
 };
