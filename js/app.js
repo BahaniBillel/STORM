@@ -1,7 +1,6 @@
 import "../sass/main.scss";
 import "../sass/profile.scss";
-import '../node_modules/owl.carousel/dist/assets/owl.carousel.css';
-import '../node_modules/owl.carousel';
+
 
 // SIDE NAVIGATION BAR
 const side_nav = document.querySelector(".side_nav");
