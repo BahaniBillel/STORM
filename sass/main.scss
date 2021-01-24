@@ -1034,33 +1034,81 @@ grid-auto-flow: column ;
 FEATURE SECTION
 -----------------------------------------------------------*/
 
-.feature{
+.values{
     width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-    margin-top: 5rem;
+    height: 50vh;
+    margin-top: 10rem;
+    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.7)),url(../img/particles.jpg)center/cover;
+    position: relative;
 
-    &__detail{
-        grid-column: 2/-1;
-        grid-row: 1/1;
-        background-color:#f4f4f4;
-        padding: 1rem;
+    &::before{
+        content: "Values";
+        position: absolute;
+        left: 50%;
+        bottom:-15%;
+        transform: translateX(-50%);
+        background-color: orangered;
+        width: 30vw;
+        height: 6vw;
+        text-align: center;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: #ffffff;
+
+
     }
 
-    &__image{
-        grid-column: 1/1;
-        grid-row: 1/-1;
-        background: url(../img/person-resting-their-hand-on-table-2058147.jpg)center/cover;
-    }
-    &__content{
-        grid-row: 2/-1;
-        grid-column: 2/-1;
-        background-color: rgb(186, 189, 22);
+    .row{
+        width: 100% ;
+        height: 100% ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 2.5rem 10rem;
+
+        .box{
+            width: 20% ;
+            height: 100% ;
+            text-align: center;
+
+            .imgbox{
+                width: 100%;
+                height: 30%;
+                img{
+                   height: 100%;
+                }
+            }
+
+            .textBox{
+                height: 55%;
+                width: 100%;
+                margin-top: .5rem;
+                h4{
+                    color: #ffffff;
+                }
+                p{
+                 font-size: .9rem;
+                 font-weight: 300;
+                 color: #ffffff;
+                }
+            }
+
+
+        }
     }
 }
 
+
+/*-------------------
+SWIPER JS CONTAINER
+------------------------------------*/
 .swiper-container {
     width: 100% !important;
     // height: 100vh;
