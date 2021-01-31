@@ -278,10 +278,17 @@ WHO ARE WE
             grid-row: 2/-1;
             grid-column: 2/2;
 
+            h5{
+                color: orangered;
+            }
+
         }
         .mg-3{
             grid-row: 2/-1;
             grid-column: 3/3;
+            h5{
+                color: orangered;
+            }
 
         }
 
@@ -302,7 +309,7 @@ WHO ARE WE
 
 
                 img{
-                    width: 70px;
+                    width: 90px;
                     height: 70px;
                     // background: url(../img/STORM_LOGO_withou_bg.png) center/cover;
                     object-fit: contain;
@@ -323,7 +330,7 @@ WHO ARE WE
             h5{
                 font-size: 90%;
                 font-weight: 300;
-                color: #ffffff;
+                // color: #ffffff;
             }
         }
     }
