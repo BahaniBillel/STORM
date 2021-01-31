@@ -201,6 +201,72 @@ a {
    }
     }
 
+    /*-------------
+CALL-TO-ACTION
+           --------------------*/
+   .cta_row{
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-rows: repeat(1,100%);
+
+
+    .one{
+        grid-row: 1/-1;
+        grid-column: 1/1;
+        background-color: orangered;
+        background: linear-gradient(rgba(8, 116, 143, 0.7),rgba(46, 43, 223, 0.7)),url(../img/male_teaching.jpg) center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            padding: 1rem;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+    }
+
+    .two{
+        grid-row: 1/-1;
+        grid-column: 2/2;
+        background-color: orangered;
+        background: linear-gradient(rgba(247, 2, 2,.7),rgba(236, 6, 6,.7)),url(../img/business_woman_standing.jpg) center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            padding: 1rem;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+    }
+    .three{
+        grid-row: 1/-1;
+        grid-column: 3/3;
+        background: linear-gradient(180deg,rgba(39, 39, 39, 0.7),rgba(19, 19, 19, 0.7)),url(../img/business_studies.jpg) center/cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            padding: 1rem;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+    }
+
+
+   }
+
+
 /*-------------
 WHO ARE WE
            --------------------*/
@@ -216,12 +282,6 @@ WHO ARE WE
     margin: 6rem 0;
 
 
-
-
-
-
-
-
     .text{
         grid-row: 1/ span 2;
         grid-column: 3/-1;
@@ -233,6 +293,18 @@ WHO ARE WE
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
+    position: relative;
+
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        width: 40%;
+        height: 1px;
+        background-color: orangered;
+    }
 
     span{
         background-color: orangered;
