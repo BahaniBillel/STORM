@@ -64,206 +64,214 @@ a {
  }
 
 
- .wrapper{
-    width: 100%;
-    height: 100%;
-    // background-color: #a5232388;
+  /*-------------
+HEADER
+     --------------------*/
 
-
-
-
-   header{
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   overflow: hidden;
-
-      .logoBox{
-          position: absolute;
-          top: 0%;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 400px;
-          background-color: #f4f4f4;
-          border-bottom-right-radius: 10px;
-          border-bottom-left-radius: 10px;
-          text-align: center;
-
-
-          .base{
-            // height: 120px;
+ header{
+            width: 100vw;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-wrap: nowrap;
+            position: relative;
+            overflow: hidden;
 
-            img{
-                height: 120px;
+               .logoBox{
+                   position: absolute;
+                   top: 0%;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   width: 400px;
+                   background-color: #f4f4f4;
+                   border-bottom-right-radius: 10px;
+                   border-bottom-left-radius: 10px;
+                   text-align: center;
 
+
+                   .base{
+                     // height: 120px;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: center;
+                     flex-wrap: nowrap;
+
+                     img{
+                         height: 120px;
+
+
+                     }
+
+                     .info{
+                           background: orangered;
+                           height: 30px;
+                           width: 100%;
+                           z-index: 1200;
+                           border-bottom-right-radius: 10px;
+                          border-bottom-left-radius: 10px;
+                             display: flex;
+                         flex-direction: row;
+                         justify-content: center;
+                         align-items: center;
+                         flex-wrap: nowrap;
+
+
+                         img{
+                             height: 70%;
+                             text-align: center;
+                         }
+
+                         p{
+                             font-size: .9rem;
+                             text-align: center;
+                             color: #f4f4f4;
+                             font-weight: 300;
+                             margin: 0;
+                         }
+
+
+
+                       }
+
+                   }
+
+
+
+
+
+                               }
+
+
+
+            .full_vd_bg{
+                width: 100%;
+                height: 100vh;
+
+                video{
+                 width: 100%;
+               //   height: 100%;
+
+                   }
+
+                       .content{
+                        position: absolute;
+                        left: 15%;
+                        top: 40%;
+                        width: 50vw;
+
+                             h5{
+                                 color: orangered;
+                                 font-weight: 400;
+                                 // background-color: #ffffff;
+                                 width: 40%;
+                             }
+
+                            h1{
+                                     //  font-size: 400% !important;
+                                      color: rgb(255, 255, 255) !important;
+                                      // z-index: 100000 !important;
+                                      font-family: 'Montserrat'!important;
+
+                             }
+
+                             p{
+                                 color: #ffffff;
+                                 font-weight: 300;
+                                 font-size: 16px;
+                                 padding-left: 15px;
+                                 border-left: 3px solid orangered;
+                             }
+                    }
 
             }
 
-            .info{
-                  background: orangered;
-                  height: 30px;
-                  width: 100%;
-                  z-index: 1200;
-                  border-bottom-right-radius: 10px;
-                 border-bottom-left-radius: 10px;
-                    display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: nowrap;
 
-
-                img{
-                    height: 70%;
-                    text-align: center;
-                }
-
-                p{
-                    font-size: .9rem;
-                    text-align: center;
-                    color: #f4f4f4;
-                    font-weight: 300;
-                    margin: 0;
-                }
-
-
-
-              }
-
-          }
-
-
-
-
-
-                      }
-
-
-
-   .full_vd_bg{
-       width: 100%;
-       height: 100vh;
-
-       video{
-        width: 100%;
-      //   height: 100%;
-
-          }
-
-              .content{
-               position: absolute;
-               left: 15%;
-               top: 40%;
-               width: 50vw;
-
-                    h5{
-                        color: orangered;
-                        font-weight: 400;
-                        // background-color: #ffffff;
-                        width: 40%;
-                    }
-
-                   h1{
-                            //  font-size: 400% !important;
-                             color: rgb(255, 255, 255) !important;
-                             // z-index: 100000 !important;
-                             font-family: 'Montserrat'!important;
-
-                    }
-
-                    p{
-                        color: #ffffff;
-                        font-weight: 300;
-                        font-size: 16px;
-                        padding-left: 15px;
-                        border-left: 3px solid orangered;
-                    }
-           }
-
-   }
-
-   .row{
-       position: absolute;
-       bottom: 2%;
-       left: 2%;
-
-
-   }
     }
 
-    /*-------------
-CALL-TO-ACTION
-           --------------------*/
-   .cta_row{
+/*-------------
+    CALL-TO-ACTION
+    --------------------*/
+.cta_row{
+             width: 100vw;
+             height: 50vh;
+             display: grid;
+             grid-gap: 5px;
+             grid-template-columns: repeat(3,minmax(200px,1fr));
+             grid-template-rows: repeat(1,100%);
+
+
+             .one{
+                 grid-row: 1/-1;
+                 grid-column: 1/1;
+                 background-color: orangered;
+                 background: linear-gradient(rgba(8, 116, 143, 0.7),rgba(46, 43, 223, 0.7)),url(../img/male_teaching.jpg) center/cover;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+                 h3{
+                     padding: 1rem;
+                     border: 1px solid #ffffff;
+                     color: #ffffff;
+                     text-transform: uppercase;
+                 }
+             }
+
+             .two{
+                 grid-row: 1/-1;
+                 grid-column: 2/2;
+                 background-color: orangered;
+                 background: linear-gradient(rgba(247, 2, 2,.7),rgba(236, 6, 6,.7)),url(../img/business_woman_standing.jpg) center/cover;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+                 h3{
+                     padding: 1rem;
+                     border: 1px solid #ffffff;
+                     color: #ffffff;
+                     text-transform: uppercase;
+                 }
+             }
+             .three{
+                 grid-row: 1/-1;
+                 grid-column: 3/3;
+                 background: linear-gradient(180deg,rgba(39, 39, 39, 0.7),rgba(19, 19, 19, 0.7)),url(../img/business_studies.jpg) center/cover;
+
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+                 h3{
+                     padding: 1rem;
+                     border: 1px solid #ffffff;
+                     color: #ffffff;
+                     text-transform: uppercase;
+                 }
+             }
+
+
+      }
+
+
+ .wrapper{
     width: 100vw;
-    height: 50vh;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(3,minmax(200px,1fr));
-    grid-template-rows: repeat(1,100%);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 1rem;
 
+ .content_wrapper{
+width: 75%;
+height: 100%;
 
-    .one{
-        grid-row: 1/-1;
-        grid-column: 1/1;
-        background-color: orangered;
-        background: linear-gradient(rgba(8, 116, 143, 0.7),rgba(46, 43, 223, 0.7)),url(../img/male_teaching.jpg) center/cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h3{
-            padding: 1rem;
-            border: 1px solid #ffffff;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-    }
-
-    .two{
-        grid-row: 1/-1;
-        grid-column: 2/2;
-        background-color: orangered;
-        background: linear-gradient(rgba(247, 2, 2,.7),rgba(236, 6, 6,.7)),url(../img/business_woman_standing.jpg) center/cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h3{
-            padding: 1rem;
-            border: 1px solid #ffffff;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-    }
-    .three{
-        grid-row: 1/-1;
-        grid-column: 3/3;
-        background: linear-gradient(180deg,rgba(39, 39, 39, 0.7),rgba(19, 19, 19, 0.7)),url(../img/business_studies.jpg) center/cover;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h3{
-            padding: 1rem;
-            border: 1px solid #ffffff;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-    }
-
-
-   }
 
 
 /*-------------
@@ -271,13 +279,13 @@ WHO ARE WE
            --------------------*/
 
 .who{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(6,minmax(120px,1fr));
     grid-template-rows: repeat(6,100px);
-    padding: 2rem;
+    // padding: 2rem 0;
     margin: 6rem 0;
 
 
@@ -300,7 +308,7 @@ WHO ARE WE
         position: absolute;
         top: 50%;
         right: 20%;
-        width: 40%;
+        width: 20%;
         height: 1px;
         background-color: orangered;
     }
@@ -424,14 +432,14 @@ WHO ARE WE
 FEATURED TRAININGS
            --------------------*/
     .domain{
-        width: 100vw;
+        width: 100%;
         // height: 200vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        padding: 4rem  3rem;
+        padding: 4rem  0rem;
 
 
         h2{
@@ -455,8 +463,8 @@ FEATURED TRAININGS
                 content: "";
                 position: absolute;
                 top: 50%;
-                left: -65%;
-                width: 60%;
+                left: -25%;
+                width: 20%;
                 height: 1px;
                 background-color: orangered;
             }
@@ -466,8 +474,8 @@ FEATURED TRAININGS
                 content: "";
                 position: absolute;
                 top: 50%;
-                right: -65%;
-                width: 60%;
+                right: -25%;
+                width: 20%;
                 height: 1px;
                 background-color: orangered;
             }
@@ -1524,18 +1532,13 @@ FEATURED TRAININGS
 
     }
 
-
-
-
-}
-
-
+    
 /*-------------
 TEASER VIDEO
            --------------------*/
 
 .teaser_vd{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -1550,7 +1553,7 @@ TEASER VIDEO
         width: 50%;
         height: 100%;
         border-right: orangered 1px solid;
-        padding: 5rem;
+        padding: 2rem;
 
         h2{
             color: orangered;
@@ -1632,7 +1635,7 @@ ADVANTAGES OF PROFESSIONAL TRAINING
            --------------------*/
 
 .adv{
-    width: 100wh;
+    width: 100%;
     height: 100vh;
     background: #f4f4f4;
     // padding: 5rem;
@@ -1861,10 +1864,10 @@ ul{
 .my-first-grid{
 display: grid;
 // height: 100vh;
-width: 100vw;
+width: 100%;
 grid-gap: 10px;
-grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-grid-template-rows: repeat(3,200px);
+grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+grid-template-rows: repeat(a3,150px);
 background: orangered;
 background: linear-gradient(66deg, rgba(255,69,0,1) 10%, rgba(255,69,0,1) 41%, rgba(255,7,7,1) 60%);
 padding: 2rem;
@@ -1953,15 +1956,15 @@ FEATURE SECTION
 -----------------------------------------------------------*/
 
 .values{
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     margin-top: 10rem;
-    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.7)),url(../img/particles.jpg)center/cover;
+    // background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.7)),url(../img/particles.jpg)center/cover;
     position: relative;
     margin-bottom: 5rem;
 
     &::before{
-        content: "Values";
+        content: "Nos Valueurs";
         position: absolute;
         left: 50%;
         bottom:-15%;
@@ -1969,9 +1972,9 @@ FEATURE SECTION
         background-color: #ff4500;
         border: 1px solid #f4f4f4;
         width: 30vw;
-        height: 6vw;
+        height: 4vw;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1992,14 +1995,17 @@ FEATURE SECTION
         flex-wrap: nowrap;
         flex-grow: 1;
         flex-shrink: 1;
-        padding: 2.5rem 10rem;
+        padding: 2.5rem 0rem;
 
         .box{
             width: 20% ;
             height: 100% ;
             text-align: center;
+            padding: .5rem;
+            border: 1px solid #ff4500;
 
             .imgbox{
+                background: #b1b1b1;
                 width: 100%;
                 height: 30%;
                 img{
@@ -2012,18 +2018,32 @@ FEATURE SECTION
                 width: 100%;
                 margin-top: .5rem;
                 h4{
-                    color: #ffffff;
+                    color: #1f1d1d;
+                    font-size: 120%;
                 }
                 p{
                  font-size: .9rem;
                  font-weight: 300;
-                 color: #ffffff;
+                 color: #242222;
                 }
             }
 
 
         }
     }
+}
+
+
+
+}
+
+.adva{
+    width: 23%;
+    height: 3000px;
+    background-color: #c90000;
+    margin-top: 6rem;
+}
+
 }
 
 
@@ -2106,7 +2126,7 @@ CALL US SECTION
 .call_us{
     width:100vw;
     height: 60vh;
-    background: linear-gradient(rgba(255,239,213,.9),rgba(235, 170, 67, 0.9)), url(../img/geometric_shapes.jpg) center/cover;
+    // background: linear-gradient(rgba(221, 220, 219, 0.9),rgba(194, 194, 194, 0.9)), url(../img/geometric_shapes.jpg) center/cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2119,7 +2139,7 @@ CALL US SECTION
 
 
     .imgbox{
-        background: url(../img/woman-standing-on-the-center-table-with-four-people-on-the-1367271.jpg) center/cover;
+        background: url(../img/contact_us_woman.jpg) center/cover;
         width: 80vh;
         height: 80vh;
         box-shadow: -1px -1px 2px #b1b1b1;
