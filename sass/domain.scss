@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/*=======================================================
+      HEADINGS
+========================================================*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #141414;
+	font-family: 'Montserrat'  , sans-serif !important;
+	font-weight: bold;
+}
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+p {
+	font-family: inherit;
+	font-weight: 400;
+	color: #6a7483;
+	font-size:13px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	text-decoration: none !important;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ body{
+     width: 100vw;
+     margin: 0 auto ;
+     position: relative;
+     background-color: #f4f4f4;
+
+
+
+ }
+
+ .services_wrapper{
+     display: grid;
+     grid-template-columns: repeat(5,20%);
+     grid-template-rows: repeat(50,50px);
+	 padding: 0;
+
+    .header{
+        grid-column: 1/-1;
+        grid-row: 1/10;
+        background: #141414;
+		background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.5)),url(../img/city_skies.jpg) top/cover;
+		width: 100%;
+		height: 100%;
+		position: relative;
+
+		.logoBox{
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 400px;
+			background-color: #f4f4f4;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			text-align: center;
+
+
+			.base{
+			  // height: 120px;
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  flex-wrap: nowrap;
+
+			  img{
+				  height: 120px;
+
+
+			  }
+
+			  .info{
+					background: orangered;
+					height: 30px;
+					width: 100%;
+					z-index: 1200;
+					border-bottom-right-radius: 10px;
+				   border-bottom-left-radius: 10px;
+					  display: flex;
+				  flex-direction: row;
+				  justify-content: center;
+				  align-items: center;
+				  flex-wrap: nowrap;
+
+
+				  img{
+					  height: 70%;
+					  text-align: center;
+				  }
+
+				  p{
+					  font-size: .9rem;
+					  text-align: center;
+					  color: #f4f4f4;
+					  font-weight: 300;
+					  margin: 0;
+				  }
+
+
+
+				}
+
+			}
+
+
+
+
+
+						}
+
+		.textContent{
+			width: 40vw;
+			height: 15vw;
+			border: solid #f4f4f4 1px;
+			position: absolute;
+			left: 20%;
+			top: 40%;
+			padding: 1rem;
+			// transform: perspective(4cm) rotateX(5deg) rotateY(10deg);
+
+			h5{
+				color: #f4f4f4;
+				letter-spacing: .4rem;
+				font-weight: 300;
+				text-transform: uppercase;
+
+			}
+			h1{
+				color: orangered;
+			}
+		}
+
+		.imgBox{
+			width: 30vw;
+			height: 40vw;
+			// background-color:orangered;
+			position: absolute;
+			right: 5%;
+			top: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.pic{
+				background: url(../img/two-content-business-partners-discussing-issue.jpg) center/cover;
+				width: 80%;
+				height: 80%;
+				z-index: 100;
+			}
+
+
+		}
+
+    }
+
+	.breakdown{
+		grid-column: 2/4;
+		grid-row: 11/14;
+		margin-left: 1rem;
+		ul{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+
+			li{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: nowrap;
+				text-align: center;
+
+				p{
+					font-size: 1.2rem;
+
+					span{
+						font-size: 2rem;
+						margin-top: .5rem;
+						color: #141414;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	.left_side{
+		grid-column: 1/1;
+		grid-row: 11/-1;
+		background-color: #141414;
+		border-right: .3rem solid orangered;
+
+	}
+
+ }

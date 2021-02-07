@@ -1,5 +1,12 @@
 import "../sass/main.scss";
 import "../sass/profile.scss";
+import "../sass/domain.scss";
+import "../sass/fontawesome.scss";
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/regular'
+import '@fortawesome/fontawesome-free/js/brands'
+
 
 
 // SIDE NAVIGATION BAR
@@ -173,3 +180,6 @@ if ( typeof module === 'object' ) {
 	module.exports = Stats;
 
 }
+
+
+alert("hello")
