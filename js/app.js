@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
-
+import "normalize-path/index.js";
 
 
 // SIDE NAVIGATION BAR
@@ -23,6 +23,7 @@ open_menu.addEventListener("click", ()=>{
 
 // ANIMATION
 // gsap.to(".logoBox",{duration:2, x:300})
+
 
 
 
@@ -182,4 +183,15 @@ if ( typeof module === 'object' ) {
 }
 
 
-alert("hello")
+/*---------
+ACTIVE ITEM IN SIDE BAR
+------------------*/
+const itemZ = document.querySelector('.list-item');
+const list = document.querySelectorAll(".page-itemz");
+
+
+
+list.addEventListener("click",()=>{
+itemZ.classList.toggle("is-active-li")
+})
+
