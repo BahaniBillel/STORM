@@ -67,7 +67,7 @@ a {
      display: grid;
      grid-template-columns: repeat(5,20%);
      grid-template-rows: repeat(50,50px);
-	 padding: 0 2rem;
+	 padding: 0;
 
     .header{
         grid-column: 1/-1;

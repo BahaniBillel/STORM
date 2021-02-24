@@ -2,11 +2,15 @@ import "../sass/main.scss";
 import "../sass/profile.scss";
 import "../sass/domain.scss";
 import "../sass/fontawesome.scss";
+import "../sass/slick.scss";
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import "normalize-path/index.js";
+import $ from 'jquery';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
 
 
 // SIDE NAVIGATION BAR

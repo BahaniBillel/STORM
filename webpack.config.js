@@ -1,5 +1,7 @@
 const path = require("path");
-
+const jquery = require('jquery');
+const webpack = require('webpack');
+const { plugin } = require("postcss");
 
 module.exports ={
     entry:"./js/app.js",
@@ -25,7 +27,22 @@ module.exports ={
                 loader: 'url-loader'
               },
 
-      ],
+      ]
 
     },
+
+      plugins: [
+        new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery',
+
+        })
+      ]
+
+
+
+
+
 };
+
+

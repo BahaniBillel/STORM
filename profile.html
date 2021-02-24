@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Storm Conseil et Formations</title>
+<title>profile</title>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i|Raleway:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!-- <link href="css/profile.css" rel="stylesheet" type="text/css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 
 <body>
@@ -59,7 +60,9 @@
 						</ul>
 					</div>
 					<div class="box_3">
-						<h4>Traits Personnels</h4>
+						<h4>
+							<i class="fa fa-female"></i>
+							Traits Personnels</h4>
 					</div>
 					<div class="box_4">
 						<h4>
@@ -76,9 +79,26 @@
 								<li><i class="fa fa-forward"></i>Lorem ipsum dolor sit.</li>
 							</ul>
 					</div>
-					<div class="box_5">
-						<h4>Entreprise Accompagne</h4>
-						<p>put caroussel here</p>
+					<div class="box_5 container">
+						<h4>
+							<i class="fa fa-building"></i>
+							Entreprise Accompagne
+						</h4>
+
+
+								<section class="autoplay">
+									<div class="slide"><img src="img/logo-insim.png" alt="logo"></div>
+									<div class="slide"><img src="img/sgs-logo.png" alt="logo"></div>
+									<div class="slide"><img src="img/sgs-image-logo.png" alt="logo"></div>
+									<div class="slide"><img src="img/STORM_LOGO.png" alt="logo"></div>
+									<div class="slide"><img src="img/global_soft_grey.png" alt="logo"></div>
+									<div class="slide"><img src="img/logo-insim.png" alt="logo"></div>
+									<div class="slide"><img src="img/logo-insim.png" alt="logo"></div>
+								</section>
+
+
+
+
 					</div>
 
 					</div>
@@ -88,9 +108,9 @@
 								<div class="photo"></div>
 							</div>
 							<div class="social">
-								<a href="#"><img src="img/linkedin.svg" alt=""></a>
-								<a href="#"><img src="img/linkedin.svg" alt=""></a>
-								<a href="#"><img src="img/linkedin.svg" alt=""></a>
+								<a href="#"><i class=" fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin"></i></a>
+								<a href="#"><i class="fab fa-youtube"></i></a>
 							</div>
 
 						</div>
@@ -99,36 +119,7 @@
 								<h3>Boulassel Rachida</h3>
 								<h4>Expert En Management</h4>
 							</div>
-							<li  class="item">
-								<a href="#">
-								<div class="imgBox"></div>
-								<h4>About me</h4>
-								</a>
-							</li>
-							<li  class="item">
-								<a href="#">
-								<div class="imgBox"></div>
-								<h4>About me</h4>
-								</a>
-							</li>
-							<li  class="item">
-								<a href="#">
-								<div class="imgBox"></div>
-								<h4>About me</h4>
-								</a>
-							</li>
-							<li  class="item">
-								<a href="#">
-								<div class="imgBox"></div>
-								<h4>About me</h4>
-								</a>
-							</li>
-							<li  class="item">
-								<a href="#">
-								<div class="imgBox"></div>
-								<h4>About me</h4>
-								</a>
-							</li>
+
 
 
 
@@ -257,8 +248,19 @@
 
 
 
+<!-- slick slider for our clients section -->
+<script>
 
 
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+</script>
 
 
 
@@ -274,47 +276,6 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="build/application.js"></script>
-<!-- Swiper js -->
-<script>
-
-    var appendNumber = 4;
-    var prependNumber = 1;
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.prependSlide([
-        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
-        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
-      ]);
-    });
-    document.querySelector('.prepend-slide').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
-    });
-    document.querySelector('.append-slide').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
-    });
-    document.querySelector('.append-2-slides').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.appendSlide([
-        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
-        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
-      ]);
-    });
-</script>
 
 
 <!-- PARTICLES JS -->
